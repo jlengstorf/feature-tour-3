@@ -10,7 +10,13 @@ export default function FunctionsPage() {
       <main>
         <h2 className={styles.heading}>Make this form functional</h2>
 
-        <form className={styles.form} method="POST" name="contact" data-netlify>
+        <form
+          className={styles.form}
+          method="POST"
+          name="contact"
+          data-netlify="true"
+          action="/netlify-forms?form=submitted"
+        >
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" />
 
